@@ -17,7 +17,7 @@ function GameGrid({ gameQuery }: Props) {
       {error !== "" && <Text textColor={"red"}>{error}</Text>}
       <SimpleGrid
         columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
-        padding={10}
+        paddingY={10}
         spacing={10}
       >
         {isLoading === true &&
