@@ -7,15 +7,15 @@ function GenreList() {
   return (
     <List>
       {data.map((genre) => (
-        <ListItem key={genre.id}>
+        <ListItem key={genre.id} paddingY={"10px"}>
           <HStack>
             <Image
-              boxSize={"32px"}
+              boxSize="32px"
               borderRadius={8}
               src={getCroppedImageUrl(genre.image_background)}
             />
+            <Text fontSize="lg">{genre.name}</Text>
           </HStack>
-          <Text>{genre.name}</Text>
         </ListItem>
       ))}
     </List>
