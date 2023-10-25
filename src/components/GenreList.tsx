@@ -24,7 +24,7 @@ function GenreList({ onSelectGenre, selectedGenre }: Props) {
 
   return (
     <>
-      <Box paddingX={4}>
+      <Box paddingX={4} paddingY={5}>
         <Heading fontSize="2xl" marginBottom={3}>
           Genres
         </Heading>
